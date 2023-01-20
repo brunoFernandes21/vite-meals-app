@@ -1,12 +1,18 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-
+import Favorites from './components/Favorites'
+import Meals from './components/Meals'
+import Modal from './components/Modal'
+ import Search from './components/Search'
 const App = () => {
 
   return (
-    <div className="App">
+    <main className="App">
       <h1>Meals App</h1>
-    </div>
+      <Favorites/>
+      <Meals/>
+      <Modal/>
+      <Search/>
+    </main>
   )
 }
 
