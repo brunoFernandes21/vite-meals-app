@@ -1,9 +1,12 @@
-import React from 'react'
+import { useGlobalContext } from "../context/Context"
 
 const Meals = () => {
+  const context = useGlobalContext()
+  console.log(context)
   return (
     <div>
-      <h1>Meals</h1>
+      <h1>Meals Component</h1>
+      <p>{context}</p>
     </div>
   )
 }

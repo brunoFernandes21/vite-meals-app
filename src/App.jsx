@@ -1,17 +1,21 @@
 import { useState } from 'react'
+// components import starts
 import Favorites from './components/Favorites'
 import Meals from './components/Meals'
 import Modal from './components/Modal'
- import Search from './components/Search'
+import Search from './components/Search'
+// components import ends
+
 const App = () => {
 
   return (
     <main className="App">
       <h1>Meals App</h1>
-      <Favorites/>
+      {/* <Search/> */} 
+      {/* <Favorites/> */}
       <Meals/>
-      <Modal/>
-      <Search/>
+      {/* <Modal/> */}
+      
     </main>
   )
 }
