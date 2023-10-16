@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <main className="App">
-      {/* <Search/> */} 
+      <Search/> 
       {/* <Favorites/> */}
       <Meals/>
       {/* <Modal/> */}

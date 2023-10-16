@@ -5,12 +5,12 @@ const Meals = () => {
   const { meals, loading } = useGlobalContext();
 
   if(loading) {
-    return <section className="section"><h2>Loading...</h2></section>
+    return <section className="section"><h4>Loading...</h4></section>
   }
 
-  if(meals.length < 1) {
+  if(meals.length === 0) {
     return <section className="section">
-      <h2>Sorry! No meals match your search term. Please try again!</h2></section>
+      <h4 className="text-center">Sorry! No meals match your search term. Please try again!</h4></section>
   }
 
   return (

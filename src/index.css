@@ -1,4 +1,6 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *,
 ::after,
 ::before {
@@ -66,7 +68,6 @@ html {
 }
 
 body {
-  /* background: var(--backgroundColor); */
   font-family: 'Courier New', Courier, monospace;
   font-weight: 400;
   line-height: 1.75;
@@ -130,8 +131,8 @@ ul {
 
 .img {
   width: 100%;
-  display: block;
-  object-fit: cover;
+  /* display: block; */
+  /* object-fit: cover; */
 }
 /* buttons */
 
@@ -215,7 +216,7 @@ ul {
 .single-meal footer {
   padding: 1rem 1.5rem;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
