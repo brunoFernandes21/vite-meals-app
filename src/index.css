@@ -142,7 +142,7 @@ ul {
   background: var(--primary-500);
   border: transparent;
   border-radius: var(--borderRadius);
-  letter-spacing: var(--letterSpacing);
+  letter-spacing: var(--letterSpacing); 
   padding: 0.375rem 0.75rem;
   box-shadow: var(--shadow-1);
   transition: var(--transition);
@@ -274,3 +274,50 @@ ul {
 
 
 /* Modal styles */
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  z-index: 100;
+}
+
+.modal__container {
+  width: 80vw;
+  max-width: 800px;
+  height: 80vh;
+  overflow: scroll;
+  background: var(--white);
+  border-radius: var(--borderRadius);
+}
+.modal__img {
+  height: 15rem;
+  border-top-right-radius: var(--borderRadius);
+  border-top-left-radius: var(--borderRadius);
+}
+.modal__content {
+   padding: 1rem 1.5rem;
+}
+.modal__content p {
+  color: var(--grey-600);
+}
+.modal__content a {
+  display: block;
+  color: var(--primary-500);
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  transition: var(--transition);
+}
+.modal__content a:hover {
+  color: var(--black);
+}
+.close__btn {
+  background: var(--blue-dark);
+  color: var(--white);
+}
